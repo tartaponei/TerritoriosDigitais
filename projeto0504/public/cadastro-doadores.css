@@ -1,0 +1,10 @@
+p.u-align-center.u-text.u-text-1 {
+  color: var(--preto);
+  font-family: PlayerSansMono8x13-Classic;
+  font-size: 0.8rem;
+  font-weight: 100;
+}
+
+.u-align-right.u-form-group.u-form-submit.u-label-top {
+  margin: 40px 0 80px 0 !important;
+}

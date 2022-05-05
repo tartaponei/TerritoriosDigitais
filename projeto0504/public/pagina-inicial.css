@@ -1,0 +1,157 @@
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  margin-top: auto;
+}
+
+.u-section-1 {
+  background-image: url('images/index-bg.png');
+  min-height: 100vh;
+}
+
+.u-section-1 .u-sheet-1 {
+  min-height: 800px;
+}
+
+.u-section-1 .u-group-1 {
+  width: 605px;
+  min-height: 603px;
+  background-image: none;
+  height: auto;
+  margin: 104px auto 60px 0;
+}
+
+.u-section-1 .u-container-layout-1 {
+  padding: 30px 20px;
+}
+
+.u-section-1 .u-text-1 {
+  font-size: 2.5rem;
+  font-weight: normal;
+  margin: 31px 60px 0;
+}
+
+.u-section-1 .u-text-2 {
+  margin: 21px 31px 0 60px;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.u-section-1 .u-btn-1 {
+  background-image: none;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  border-style: none;
+  font-weight: 700;
+  font-family: PlayerSansMono8x13-Classic;
+  margin: 17px auto 0 60px;
+  border-radius: 15px;
+}
+
+@media (max-width: 1199px) {
+  .u-section-1 {
+    background-position: 50% 50%;
+  }
+
+  .u-section-1 .u-sheet-1 {
+    min-height: 811px;
+  }
+
+  .u-section-1 .u-group-1 {
+    width: 521px;
+    min-height: 604px;
+    margin-top: 60px;
+    height: auto;
+  }
+
+  .u-section-1 .u-text-1 {
+    width: auto;
+    margin-top: 23px;
+    margin-right: 0;
+    margin-left: 20px;
+  }
+
+  .u-section-1 .u-text-2 {
+    margin-right: 30px;
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 991px) {
+  .u-section-1 .u-sheet-1 {
+    min-height: 621px;
+  }
+
+  .u-section-1 .u-text-1 {
+    margin-right: 60px;
+  }
+}
+
+@media (max-width: 767px) {
+  .u-section-1 .u-sheet-1 {
+    min-height: 641px;
+  }
+
+  .u-section-1 .u-group-1 {
+    min-height: 650px;
+  }
+
+  .u-section-1 .u-text-1 {
+    margin-right: 28px;
+  }
+
+  .u-section-1 .u-text-2 {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 575px) {
+  .u-section-1 .u-sheet-1 {
+    min-height: 585px;
+  }
+
+  .u-section-1 .u-group-1 {
+    min-height: 554px;
+    margin-right: initial;
+    margin-left: initial;
+    width: auto;
+  }
+
+  .u-section-1 .u-text-1 {
+    font-size: 1.5rem;
+    margin-top: 0;
+    margin-right: 0;
+  }
+
+  .u-section-1 .u-text-2 {
+    width: auto;
+    margin-right: 14px;
+  }
+
+  .u-section-1 .u-btn-1 {
+    margin-left: auto;
+    padding: 5px 12px 5px 5px;
+  }
+}
+
+#msg {
+  border: 2px solid #222323;
+  box-shadow: -10px 10px 0px -2px #222323;
+}
+
+@font-face {
+  font-family: 'PlayerSansMono8x13-Classic';
+  font-style: normal;
+  font-weight: 400;
+  src: url(fonts/PlayerSansMono8x13-Classic.otf);
+}
+@font-face {
+  font-family: 'AnonymousPro-Regular';
+  font-style: normal;
+  font-weight: 400;
+  src: url(fonts/AnonymousPro-Regular.ttf);
+}

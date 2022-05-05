@@ -1,0 +1,82 @@
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  margin-top: auto;
+}
+.u-section-1 {
+  background-image: none;
+}
+
+.u-section-1 .u-sheet-1 {
+  min-height: 76vh;
+}
+
+.u-section-1 .u-text-1 {
+  margin: 60px auto 0;
+}
+
+.u-section-1 .u-btn-1 {
+  border-style: none;
+  font-size: 1.5rem;
+  background-image: none;
+  font-weight: 700;
+  font-family: AnonymousPro-Regular;
+  margin: 61px auto 0;
+  padding: 8px 24px 9px 23px;
+}
+
+.u-section-1 .u-icon-1 {
+  width: 50px;
+  height: 57px;
+  font-size: 1.4584em;
+  margin-left: 26px;
+}
+
+.u-section-1 .u-btn-2 {
+  font-size: 1.5rem;
+  font-family: AnonymousPro-Regular;
+  border-style: none;
+  font-weight: 700;
+  margin: 10px auto 60px;
+  padding: 8px 25px 9px 24px;
+}
+
+.u-section-1 .u-icon-2 {
+  width: 50px;
+  height: 57px;
+  font-size: 1.4584em;
+  margin-left: 26px;
+}
+
+@media (max-width: 1199px) {
+  .u-section-1 .u-text-1 {
+    font-weight: normal;
+    margin-top: 11px;
+  }
+
+  .u-section-1 .u-btn-1 {
+    margin-top: 109px;
+  }
+}
+
+@media (max-width: 575px) {
+  .u-section-1 .u-text-1 {
+    margin-top: 60px;
+  }
+}
+@font-face {
+  font-family: 'AnonymousPro-Regular';
+  font-style: normal;
+  font-weight: 400;
+  src: url(fonts/AnonymousPro-Regular.ttf);
+}
+@font-face {
+  font-family: 'PlayerSansMono8x13-Classic';
+  font-style: normal;
+  font-weight: 400;
+  src: url(fonts/PlayerSansMono8x13-Classic.otf);
+}

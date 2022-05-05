@@ -1,0 +1,110 @@
+@font-face {
+  font-family: 'PlayerSansLight';
+  src: url('./fonts/PlayerSansMono8x13-Light.ttf') format('truetype');
+}
+
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+footer {
+  margin-top: auto;
+}
+
+.section {
+  padding: 50px 40px;
+}
+
+.cabecalho {
+  margin-bottom: 5vh;
+}
+
+.linha1 {
+  width: 100%;
+  text-align: center;
+  padding: 20px 0;
+}
+#nomeUsuario {
+  font-size: 1.2rem;
+  margin: 0 10px;
+}
+#nomeEquipe {
+  font-style: italic;
+  font-size: 0.9rem;
+  padding: 0;
+  margin: 0;
+  margin-top: 5px;
+}
+
+#imgPerfil {
+  border: 2px solid rgba(34, 35, 35, 0.9);
+  border-radius: 20px;
+  width: 100%;
+  height: 60vh;
+  object-fit: cover;
+  object-position: center;
+}
+
+.linha3 {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+#nomeClasse {
+  font-size: 0.9rem;
+}
+#personalidade {
+  font-size: 0.9rem;
+}
+.objDiv {
+  margin-bottom: 70px;
+}
+
+.objDiv img {
+  width: 30%;
+}
+.objDiv h2 {
+  font-size: 1.3rem;
+}
+
+#objetivo {
+  text-align: justify;
+}
+
+.projetoDiv {
+  margin-bottom: 50px;
+}
+
+.projetoDiv img {
+  width: 30%;
+}
+.projetoDiv h2 {
+  font-size: 1.3rem;
+}
+
+#descricaoProjeto {
+  text-align: justify;
+}
+
+@font-face {
+  font-family: 'PlayerSansMono8x13-Classic';
+  font-style: normal;
+  font-weight: 400;
+  src: url(fonts/PlayerSansMono8x13-Classic.otf);
+}
+@font-face {
+  font-family: 'AnonymousPro-Regular';
+  font-style: normal;
+  font-weight: 400;
+  src: url(fonts/AnonymousPro-Regular.ttf);
+}

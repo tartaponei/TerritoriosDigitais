@@ -1,0 +1,86 @@
+html,
+body,
+#viewDiv {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  --laranja: #fd791c;
+  --verde: #4ee572;
+  --azul: #0a57f1;
+  --rosa: #e759ff;
+}
+
+/*escondendo o botão de zoom*/
+.esri-component.esri-zoom.esri-widget {
+  display: none;
+}
+.esri-component.esri-attribution.esri-widget {
+  display: none;
+}
+/*colocando a barra de pesquisa pra ocupar a tela toda*/
+.esri-ui-top-left.esri-ui-corner {
+  width: 100%;
+}
+/*o elemento dentro dela que tem que aumentar junto */
+.esri-component.esri-search.esri-widget {
+  width: 100%;
+}
+.esri-search__submit-button.esri-widget--button,
+.esri-input.esri-search__input,
+.esri-popup__main-container.esri-widget,
+.esri-popup__content,
+.esri-feature.esri-widget {
+  background-color: #f0f6f0;
+}
+
+.esri-component.esri-search.esri-widget,
+.esri-input.esri-search__input,
+.esri-search__submit-button.esri-widget--button {
+  border-radius: 5px;
+}
+
+.esri-search__submit-button.esri-widget--button {
+  border: 0px black;
+}
+
+#botoes {
+  position: absolute;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 4vw;
+  width: 92vw;
+  height: 15vh;
+  margin: 80vh 4vw 0px 4vw;
+  align-items: center;
+  justify-items: center;
+}
+
+#botoes img {
+  border: none;
+  padding: 3px;
+  border-radius: 15px;
+  box-sizing: border-box;
+  position: relative;
+  max-height: 14vh;
+  max-width: 17vw;
+  width: auto;
+  height: auto;
+}
+
+#perfil {
+  background-color: var(--laranja);
+  padding: 8px !important;
+}
+
+#projeto {
+  background-color: var(--verde);
+}
+
+#jornal {
+  background-color: var(--rosa);
+}
+
+#reportar {
+  background-color: var(--azul);
+}

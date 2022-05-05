@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="initial-scale=1, maximum-scale=1, user-scalable=no"
+    />
+    <link rel="icon" type="image/x-icon" href="/images/icone.ico" />
+    <title>Territórios Digitais - Queimados</title>
+
+    <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-auth-compat.js"></script>
+    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+    <link rel="stylesheet" href="nicepage.css" media="screen" />
+    <link rel="stylesheet" href="pagina-inicial.css" media="screen" />
+    <link
+      rel="stylesheet"
+      href="https://js.arcgis.com/4.22/esri/themes/light/main.css"
+    />
+    <script src="https://js.arcgis.com/4.22/"></script>
+    
+    <link rel="stylesheet" href="mapa.css"></link>
+  </head>
+  <body style="font-family: AnonymousPro-Regular;">
+      <div id="viewDiv"></div>
+      <div id='botoes'>
+
+        <a href="perfil.html"><img src="./images/perfil.png" id="perfil" alt="abrir perfil"></a>
+
+        <a href="projeto.html"><img src="./images/projeto.png" id="projeto" alt="abrir projeto"></a>
+
+        <a href="jornal.html"><img src="./images/journal.png" id="jornal" alt="abrir jornal"></a>
+        
+        <a href="cadastro-problema.html"><img src="./images/reportar.png" id="reportar" alt="reportar problema"></a>
+
+    </div>
+    <script src="index.js" type="module"></script>
+    <script src="mapa.js" type="module"></script>
+  </body>
+</html>

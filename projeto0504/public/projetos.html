@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta name="keywords" content="Você já está dentro!" />
+    <meta name="description" content="" />
+    <meta name="page_type" content="np-template-header-footer-from-plugin" />
+    <link rel="icon" type="image/x-icon" href="/images/icone.ico" />
+    <title>Projetos</title>
+    <link rel="stylesheet" href="nicepage.css" media="screen" />
+    <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-auth-compat.js"></script>
+    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+    <script src="index.js" type="module" defer></script>
+    <script src="" type="module" defer></script>
+
+    <script
+      class="u-script"
+      type="text/javascript"
+      src="jquery.js"
+      defer=""
+    ></script>
+    <script
+      class="u-script"
+      type="text/javascript"
+      src="nicepage.js"
+      defer=""
+    ></script>
+    <meta name="generator" content="Nicepage 4.6.5, nicepage.com" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "Organization",
+        "name": "Territórios Digitais",
+        "logo": "images/logoterritriosdigitaislaranja.svg",
+        "sameAs": [
+          "https://www.facebook.com/visaocoop",
+          "https://www.instagram.com/visaocoop/"
+        ]
+      }
+    </script>
+    <meta name="theme-color" content="#fd791c" />
+    <meta property="og:title" content="Perfil" />
+    <meta property="og:description" content="" />
+    <meta property="og:type" content="website" />
+    <link rel="stylesheet" href="projetos.css" media="screen" />
+  </head>
+  <body class="u-body u-xl-mode">
+    <header class="u-clearfix u-header u-palette-3-base u-header" id="sec-7c49">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <a
+          href="pagina-inicial.html"
+          data-page-id="24373979"
+          class="u-image u-logo u-image-1"
+          data-image-width="1170"
+          data-image-height="530"
+          title="Página Inicial"
+        >
+          <img
+            src="images/logoterritoriosdigitaisoffwhite.svg"
+            class="u-logo-image u-logo-image-1"
+          />
+        </a>
+        <nav
+          class="u-menu u-menu-dropdown u-offcanvas u-menu-1"
+          data-position="menu-header"
+        >
+          <div
+            class="menu-collapse"
+            style="
+              font-size: 1.125rem;
+              letter-spacing: 0px;
+              text-transform: uppercase;
+              font-weight: 700;
+            "
+          >
+            <a
+              class="u-button-style u-custom-active-border-color u-custom-border u-custom-border-color u-custom-borders u-custom-hover-border-color u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-text-active-color u-custom-text-color u-custom-text-hover-color u-custom-top-bottom-menu-spacing u-nav-link u-palette-3-base u-text-active-palette-1-base u-text-hover-palette-3-base u-text-palette-1-base"
+              href="#"
+            >
+              <svg class="u-svg-link" viewBox="0 0 24 24">
+                <use
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  xlink:href="#menu-hamburger"
+                ></use>
+              </svg>
+              <svg
+                class="u-svg-content"
+                version="1.1"
+                id="menu-hamburger"
+                viewBox="0 0 16 16"
+                x="0px"
+                y="0px"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g>
+                  <rect y="1" width="16" height="2"></rect>
+                  <rect y="7" width="16" height="2"></rect>
+                  <rect y="13" width="16" height="2"></rect>
+                </g>
+              </svg>
+            </a>
+          </div>
+          <div class="u-custom-menu u-nav-container">
+            <ul
+              class="u-custom-font u-nav u-spacing-30 u-text-font u-unstyled u-nav-1"
+            >
+              <li class="u-nav-item">
+                <a
+                  class="u-border-2 u-border-active-palette-5-base u-border-hover-palette-5-base u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-palette-5-base u-text-hover-palette-5-base"
+                  href="pagina-inicial.html"
+                  style="padding: 10px 0px"
+                  >Página Inicial</a
+                >
+              </li>
+              <li class="u-nav-item">
+                <a
+                  class="u-border-2 u-border-active-palette-5-base u-border-hover-palette-5-base u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-palette-5-base u-text-hover-palette-5-base"
+                  href="mapa.html"
+                  style="padding: 10px 0px"
+                  >Mapa</a
+                >
+              </li>
+              <li class="u-nav-item">
+                <a
+                  id="bntLoginPc"
+                  class="u-border-2 u-border-active-palette-5-base u-border-hover-palette-5-base u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-palette-5-base u-text-hover-palette-5-base"
+                  href="cadastro.html"
+                  style="padding: 10px 0px"
+                  >Login</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="u-custom-menu u-nav-container-collapse">
+            <div
+              class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav"
+            >
+              <div class="u-inner-container-layout u-sidenav-overflow">
+                <div class="u-menu-close"></div>
+                <ul
+                  class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"
+                >
+                  <li class="u-nav-item">
+                    <a
+                      class="u-button-style u-nav-link"
+                      href="pagina-inicial.html"
+                      style="padding: 10px 0px"
+                      >Página Inicial</a
+                    >
+                  </li>
+                  <li class="u-nav-item">
+                    <a
+                      class="u-button-style u-nav-link"
+                      href="mapa.html"
+                      style="padding: 10px 0px"
+                      >Mapa</a
+                    >
+                  </li>
+                  <li class="u-nav-item">
+                    <a
+                      id="btnLoginCell"
+                      class="u-button-style u-nav-link"
+                      href="cadastro.html"
+                      style="padding: 10px 0px"
+                      >Login</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <section>
+      <div id="exibeEquipes">
+        <h1>Projetos</h1>
+        <div id="listaEquipes">
+          <div class="equipe">
+            <a href="projeto.html?N%C3%BAcleo%20de%20Defesa%20Ambiental">
+              <div class="imagemProjeto">
+                <img
+                  src="https://firebasestorage.googleapis.com/v0/b/projeto-territorios.appspot.com/o/provisorio%2F3.%20Mapeamento%20de%20problemas%20-%20Piabas.png?alt=media&token=2823e185-2e1b-4bae-ad3d-6fc526e46fb8"
+                  alt=""
+                />
+              </div>
+              <div class="infoEquipe">
+                <p id="nomeProjeto" class="u-text-variant">
+                  Núcleo de Defesa Ambiental
+                </p>
+                <p id="nomeEquipe" class="u-text-variant">NDA</p>
+              </div>
+            </a>
+          </div>
+          <div class="equipe">
+            <a href="projeto.html?Trash">
+              <div class="imagemProjeto">
+                <img
+                  src="https://firebasestorage.googleapis.com/v0/b/projeto-territorios.appspot.com/o/provisorio%2Flixeira.jpeg?alt=media&token=e58244fe-3103-4669-950b-4d90c9553845"
+                  alt=""
+                />
+              </div>
+              <div class="infoEquipe">
+                <p id="nomeProjeto" class="u-text-variant">
+                  Lixeiras Inteligentes
+                </p>
+                <p id="nomeEquipe" class="u-text-variant">Trash</p>
+              </div>
+            </a>
+          </div>
+          <div class="equipe">
+            <a href="projeto.html?Mundo Melhor">
+              <div class="imagemProjeto">
+                <img
+                  src="https://firebasestorage.googleapis.com/v0/b/projeto-territorios.appspot.com/o/provisorio%2FmundoMelhor.JPG?alt=media&token=e62bdc53-8a6d-4a36-8d9a-8325332e0cc0"
+                  alt=""
+                />
+              </div>
+              <div class="infoEquipe">
+                <p id="nomeProjeto" class="u-text-variant">
+                  Mundo Melhor Contra Fome
+                </p>
+                <p id="nomeEquipe" class="u-text-variant">Mundo Melhor</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="equipe">
+            <a href="projeto.html?Agroecologia">
+              <div class="imagemProjeto">
+                <img
+                  src="https://firebasestorage.googleapis.com/v0/b/projeto-territorios.appspot.com/o/provisorio%2Fagroecologia.jpeg?alt=media&token=f208af91-3f54-46c5-bf96-7e652e40b4c7"
+                  alt=""
+                />
+              </div>
+              <div class="infoEquipe">
+                <p id="nomeProjeto" class="u-text-variant">Agroecologia QMD</p>
+                <p id="nomeEquipe" class="u-text-variant">Agroecologia</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="equipe">
+            <a href="projeto.html?Agenda Cultural">
+              <div class="imagemProjeto">
+                <img
+                  src="https://firebasestorage.googleapis.com/v0/b/projeto-territorios.appspot.com/o/provisorio%2FagendaCultural.jpeg?alt=media&token=d4995a6c-72b5-4cb6-b489-a6ceda4abbc6"
+                  alt=""
+                />
+              </div>
+              <div class="infoEquipe">
+                <p id="nomeProjeto" class="u-text-variant">Agenda Cultural</p>
+                <p id="nomeEquipe" class="u-text-variant">Ana Luiza</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="equipe">
+            <a href="projeto.html?Ciclo-logística">
+              <div class="imagemProjeto">
+                <img
+                  src="https://firebasestorage.googleapis.com/v0/b/projeto-territorios.appspot.com/o/provisorio%2FProjeto%20ciclo-log%C3%ADstica.jpeg?alt=media&token=a777a4d2-e616-4db4-97b4-20cb5865fd1d"
+                  alt=""
+                />
+              </div>
+              <div class="infoEquipe">
+                <p id="nomeProjeto" class="u-text-variant">
+                  Pedalando para o Futuro
+                </p>
+                <p id="nomeEquipe" class="u-text-variant">Ciclo-logística</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div id="areaPorquinho">
+        <h1 id="tituloQR">Ajude algum projeto através do QR Code</h1>
+        <img src="./images/QRCode_Fácil.svg" alt="" id="imgPix" /><br />
+        <p class="u-text-variant random">ou faça um Pix para o email:</p>
+        <p class="u-text-variant" id="emailVisao">visaocoop@gmail.com</p>
+      </div>
+    </section>
+
+    <footer
+      class="u-align-center-md u-align-center-sm u-align-center-xs u-clearfix u-footer u-palette-3-base"
+      id="sec-f818"
+    >
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <a
+          href="pagina-inicial.html"
+          data-page-id="24373979"
+          class="u-align-left-xs u-image u-logo u-image-1"
+          data-image-width="1170"
+          data-image-height="530"
+          title="Página Inicial"
+        >
+          <img
+            src="images/logocentralizadaterritoriosdigitaisoffwhite.svg"
+            class="u-logo-image u-logo-image-1"
+          />
+        </a>
+        <p class="u-align-center u-text u-text-1" style="color: #f0f6f0">
+          Visão Coop©
+        </p>
+        <div
+          class="u-align-left-lg u-align-left-md u-align-left-xl u-align-right-sm u-align-right-xs u-social-icons u-spacing-10 u-social-icons-1"
+        >
+          <a
+            class="u-social-url"
+            title="Facebook"
+            target="_blank"
+            href="https://www.facebook.com/visaocoop"
+            ><span
+              class="u-file-icon u-icon u-social-facebook u-social-icon u-text-white u-icon-1"
+              ><img src="images/1.png" alt=""
+            /></span>
+          </a>
+          <a
+            class="u-social-url"
+            title="I"
+            target="_blank"
+            href="https://www.instagram.com/visaocoop/"
+            ><span
+              class="u-file-icon u-icon u-social-icon u-social-instagram u-text-white u-icon-2"
+              ><img src="images/2.png" alt=""
+            /></span>
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

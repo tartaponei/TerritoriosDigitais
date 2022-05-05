@@ -1,0 +1,75 @@
+html {
+  font-size: 16px;
+  min-height: 100vh;
+  height: 100vh;
+}
+body {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+}
+
+footer {
+  position: relative;
+  text-align: center;
+  margin-top: auto;
+}
+main {
+  padding: 6vh 5vw 15vh 5vw;
+}
+
+section {
+  padding: 0 5vw;
+}
+section img {
+  max-width: 100%;
+  box-shadow: none !important;
+}
+
+#tituloPost {
+  margin: 50px auto 40px;
+}
+
+#imagemPost {
+  margin-bottom: 20px;
+}
+
+#descricaoPost {
+  margin-top: 20px;
+}
+#descricaoPost h1,
+#descricaoPost h2,
+#descricaoPost h3,
+#descricaoPost h4,
+#descricaoPost h5 {
+  text-align: start;
+}
+
+#descricaoPost p,
+#dataPost {
+  padding: 0 10px;
+  text-align: justify;
+}
+
+.esri-component.esri-zoom.esri-widget {
+  display: none;
+}
+.esri-component.esri-attribution.esri-widget {
+  display: none;
+}
+
+@font-face {
+  font-family: 'PlayerSansMono8x13-Classic';
+  font-style: normal;
+  font-weight: 400;
+  src: url(fonts/PlayerSansMono8x13-Classic.otf);
+}
+@font-face {
+  font-family: 'AnonymousPro-Regular';
+  font-style: normal;
+  font-weight: 400;
+  src: url(fonts/AnonymousPro-Regular.ttf);
+}

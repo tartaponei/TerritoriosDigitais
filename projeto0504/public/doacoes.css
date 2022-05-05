@@ -1,0 +1,110 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  text-align: center;
+  padding: 0 15px;
+}
+
+section p {
+  text-align: justify;
+  font-weight: 600;
+}
+
+main {
+  padding: 8vh 6vw 15vh;
+}
+
+#comeco {
+  margin-bottom: 60px;
+}
+
+#titulo {
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+#titulo2 {
+  color: #e759ff;
+  font-size: 1rem;
+  font-weight: 100;
+  text-transform: initial;
+  margin-bottom: 50px;
+}
+
+#imgChatCoracao {
+  max-width: 100%;
+  max-height: 100%;
+  height: auto;
+  width: auto;
+  padding: 40px 100px 0px;
+  filter: invert(48%) sepia(47%) saturate(3520%) hue-rotate(255deg)
+    brightness(101%) contrast(101%);
+}
+
+#QRpix {
+  max-width: 100%;
+  width: auto;
+  height: auto;
+}
+
+video {
+  width: 100%;
+  border: 5px solid #222323;
+}
+
+footer {
+  background: #222323 !important;
+  color: #f0f6f0;
+}
+
+#areaPix {
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+#areaPix h1 {
+  font-size: 1.7rem;
+  margin-bottom: 60px;
+}
+
+.u-btn {
+  max-width: 100%;
+  margin: 40px auto;
+  border-radius: 8px;
+  line-height: 1.6 !important;
+  padding: 0px 30px;
+}
+
+.u-btn h2 {
+  font-size: 1rem;
+  margin: 12px 0;
+}
+
+#btn1 {
+  background-color: #e759ff;
+}
+
+#btn2 {
+  background-color: #0a57f1;
+}
+
+#bairrosAfetados img {
+  max-width: 100%;
+  max-height: 100%;
+  height: auto;
+  width: auto;
+  padding: 40px 100px 20px;
+}
+#bairrosAfetados {
+  padding-bottom: 70px;
+}
+
+#afetados {
+  font-size: 1.5rem;
+  margin: 0 auto 75px;
+}

@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta name="keywords" content="Cadastre-se!" />
+    <meta name="description" content="" />
+    <meta name="page_type" content="np-template-header-footer-from-plugin" />
+    <link rel="icon" type="image/x-icon" href="/images/icone.ico" />
+    <title>Projeto</title>
+    <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-auth-compat.js"></script>
+    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+    <link rel="stylesheet" href="nicepage.css" media="screen" />
+    <link rel="stylesheet" href="projeto.css" media="screen" />
+    <script
+      class="u-script"
+      type="text/javascript"
+      src="jquery.js"
+      defer=""
+    ></script>
+    <script
+      class="u-script"
+      type="text/javascript"
+      src="nicepage.js"
+      defer=""
+    ></script>
+    <meta name="generator" content="Nicepage 4.7.1, nicepage.com" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "Organization",
+        "name": "Territórios Digitais",
+        "logo": "images/logoterritriosdigitaislaranja.svg",
+        "sameAs": [
+          "https://www.facebook.com/visaocoop",
+          "https://www.instagram.com/visaocoop/"
+        ]
+      }
+    </script>
+    <meta name="theme-color" content="#fd791c" />
+    <meta property="og:title" content="Projeto" />
+    <meta property="og:description" content="" />
+    <meta property="og:type" content="website" />
+  </head>
+  <body class="u-body u-xl-mode">
+    <header class="u-clearfix u-header u-palette-1-base u-header" id="sec-7c49">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <a
+          href="pagina-inicial.html"
+          data-page-id="24373979"
+          class="u-image u-logo u-image-1"
+          data-image-width="1170"
+          data-image-height="530"
+          title="Página Inicial"
+        >
+          <img
+            src="images/logoterritoriosdigitaisoffwhite.svg"
+            class="u-logo-image u-logo-image-1"
+          />
+        </a>
+        <nav
+          class="u-menu u-menu-dropdown u-offcanvas u-menu-1"
+          data-position="menu-header"
+        >
+          <div
+            class="menu-collapse"
+            style="
+              font-size: 1.125rem;
+              letter-spacing: 0px;
+              text-transform: uppercase;
+              font-weight: 700;
+            "
+          >
+            <a
+              class="u-button-style u-custom-active-border-color u-custom-border u-custom-border-color u-custom-borders u-custom-hover-border-color u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-text-active-color u-custom-text-color u-custom-text-hover-color u-custom-top-bottom-menu-spacing u-nav-link u-palette-1-base u-text-active-palette-1-base u-text-hover-palette-2-base u-text-palette-1-base"
+              href="#"
+            >
+              <svg class="u-svg-link" viewBox="0 0 24 24" style="fill: #f0f6f0">
+                <use
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  xlink:href="#menu-hamburger"
+                ></use>
+              </svg>
+              <svg
+                class="u-svg-content"
+                version="1.1"
+                id="menu-hamburger"
+                viewBox="0 0 16 16"
+                x="0px"
+                y="0px"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g>
+                  <rect y="1" width="16" height="2"></rect>
+                  <rect y="7" width="16" height="2"></rect>
+                  <rect y="13" width="16" height="2"></rect>
+                </g>
+              </svg>
+            </a>
+          </div>
+          <div class="u-custom-menu u-nav-container">
+            <ul
+              class="u-custom-font u-nav u-spacing-30 u-text-font u-unstyled u-nav-1"
+            >
+              <li class="u-nav-item">
+                <a
+                  class="u-border-2 u-border-active-palette-5-base u-border-hover-palette-5-base u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-palette-5-base u-text-hover-palette-5-base"
+                  href="pagina-inicial.html"
+                  style="padding: 10px 0px"
+                  >Página Inicial</a
+                >
+              </li>
+              <li class="u-nav-item">
+                <a
+                  class="u-border-2 u-border-active-palette-5-base u-border-hover-palette-5-base u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-palette-5-base u-text-hover-palette-5-base"
+                  href="mapa.html"
+                  style="padding: 10px 0px"
+                  >Mapa</a
+                >
+              </li>
+              <li class="u-nav-item">
+                <a
+                  id="bntLoginPc"
+                  class="u-border-2 u-border-active-palette-5-base u-border-hover-palette-5-base u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-palette-5-base u-text-hover-palette-5-base"
+                  href="cadastro.html"
+                  style="padding: 10px 0px"
+                  >Login</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="u-custom-menu u-nav-container-collapse">
+            <div
+              class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav"
+            >
+              <div class="u-inner-container-layout u-sidenav-overflow">
+                <div class="u-menu-close"></div>
+                <ul
+                  class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"
+                >
+                  <li class="u-nav-item">
+                    <a
+                      class="u-button-style u-nav-link"
+                      href="pagina-inicial.html"
+                      style="padding: 10px 0px"
+                      >Página Inicial</a
+                    >
+                  </li>
+                  <li class="u-nav-item">
+                    <a
+                      class="u-button-style u-nav-link"
+                      href="mapa.html"
+                      style="padding: 10px 0px"
+                      >Mapa</a
+                    >
+                  </li>
+                  <li class="u-nav-item">
+                    <a
+                      id="btnLoginCell"
+                      class="u-button-style u-nav-link"
+                      href="cadastro.html"
+                      style="padding: 10px 0px"
+                      >Login</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div id="apresentacaoProjeto">
+        <div id="cabeçalho">
+          <div id="metade1">
+            <h1 id="nomeProjeto">nome do projeto</h1>
+            <h2 id="nomeEquipe">nome da equipe</h2>
+          </div>
+          <div id="metade2"></div>
+        </div>
+        <div id="areaImgProjeto">
+          <img src="" alt="" />
+        </div>
+        <img id="icone" src="./images/growth.svg" alt="imagem ilustrativa" />
+        <p id="descricaoProjeto">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque
+          maxime possimus sapiente reiciendis ipsum dolore odio, repudiandae,
+          mollitia earum error ab fugit vitae officia qui vel illo fuga.
+          Blanditiis, a. Lorem ipsum dolor sit amet consectetur, adipisicing
+          elit. Ipsum repellat ab delectus. Quidem nesciunt, id dolores
+          dignissimos, provident vel voluptate non facere repellat optio error.
+          Eligendi praesentium quis unde laudantium.
+        </p>
+
+        <div id="areaPowerPoint">
+          <iframe
+            id="powerPoint"
+            src="https://docs.google.com/presentation/d/e/2PACX-1vTsYKPgG0PH6rLHf7EWpGAH60GMwCO57M_SM1t-y0m87ll4cXCncmjSp36VGYxfGSe3iQQZgE7BU7ss/embed?start=false&loop=false&delayms=3000"
+            frameborder="0"
+            width="NaN"
+            height="NaN"
+            allowfullscreen="true"
+            mozallowfullscreen="true"
+            webkitallowfullscreen="true"
+          ></iframe>
+        </div>
+      </div>
+      <div id="equipeProjeto">
+        <h4>Equipe</h4>
+        <div id="listaMembros"></div>
+      </div>
+      <div id="areaVotacao">
+        <div id="areaVoto">
+          <h4>Vote!</h4>
+          <div>
+            <div id="votos">
+              <input
+                type="range"
+                value="0"
+                max="5"
+                min="0"
+                id="quantidadeDeVotos"
+              />
+              <p id="exibeQuantidadeDeVotos"><strong>0</strong> </p>
+            </div>
+            <p>Seus pontos atuais: <strong><span id="pontosAtuais">0</span></strong></p>
+            <p>Custo dos votos: <strong><span id="exibeCusto">0</span></strong></p>
+            <p>Seus pontos depois: <strong><span id="pontosDepois">0</span></strong></p>
+            <button
+              class="botao u-hover-palette-2-dark-1 u-palette-2-base"
+              id="enviarVoto"
+            >
+              Enviar
+            </button>
+          </div>
+        </div>
+      </div>
+      <div id="areaDuvidas">
+        <h5>Ficou com alguma duvida sobre o projeto? Manda um zap!</h5>
+        <textarea name="mensagemZap" id="msgZap" cols="30" rows="5"></textarea>
+        <input
+          id="enviarZap"
+          type="button"
+          value="Enviar"
+          class="botao u-hover-palette-2-dark-1 u-palette-2-base"
+        />
+      </div>
+    </main>
+    <footer
+      class="u-align-center-md u-align-center-sm u-align-center-xs u-clearfix u-footer u-palette-1-base"
+      id="footer"
+    >
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <a
+          href="pagina-inicial.html"
+          data-page-id="24373979"
+          class="u-align-left-xs u-image u-logo u-image-1"
+          data-image-width="1170"
+          data-image-height="530"
+          title="Página Inicial"
+        >
+          <img
+            src="images/logocentralizadaterritoriosdigitaisoffwhite.svg"
+            class="u-logo-image u-logo-image-1"
+          />
+        </a>
+        <p class="u-align-center u-text u-text-1" style="color: #f0f6f0">
+          Visão Coop©
+        </p>
+        <div
+          class="u-align-left-lg u-align-left-md u-align-left-xl u-align-right-sm u-align-right-xs u-social-icons u-spacing-10 u-social-icons-1"
+        >
+          <a
+            class="u-social-url"
+            title="Facebook"
+            target="_blank"
+            href="https://www.facebook.com/visaocoop"
+            ><span
+              class="u-file-icon u-icon u-social-facebook u-social-icon u-text-white u-icon-1"
+              ><img src="images/3.png" alt=""
+            /></span>
+          </a>
+          <a
+            class="u-social-url"
+            title="I"
+            target="_blank"
+            href="https://www.instagram.com/visaocoop/"
+            ><span
+              class="u-file-icon u-icon u-social-icon u-social-instagram u-text-white u-icon-2"
+              ><img src="images/4.png" alt=""
+            /></span>
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="index.js" type="module"></script>
+  <script src="projeto.js" type="module"></script>
+</html>
