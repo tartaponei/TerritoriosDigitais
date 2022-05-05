@@ -15,7 +15,6 @@ const firebaseConfig = {
   messagingSenderId: '383151753659',
   appId: '1:383151753659:web:62a7779c499bf789ca9c9e'
 }
-
 //iniciando o firebase
 let uid
 const firebaseApp = initializeApp(firebaseConfig)
@@ -68,6 +67,10 @@ document.addEventListener('DOMContentLoaded', function () {
             [window.location.href.split(`/`).length - 1].toUpperCase() ==
           'MAPA.HTML' //se esiver na aba do mapa
         ) {
+          document
+            .getElementById('botoes')
+            .setAttribute('style', 'display:none')
+
           firebase
             .firestore()
             .collection('usuarios')
@@ -79,12 +82,21 @@ document.addEventListener('DOMContentLoaded', function () {
                 //se tenho uma equipe
                 if (user.data().projeto) {
                   //se eu tenho um projeto
+                  document
+                    .getElementById('botoes')
+                    .setAttribute('style', 'display:grid')
                 } else {
                   //se NÃO tenho um projeto
+                  document
+                    .getElementById('botoes')
+                    .setAttribute('style', 'display:grid')
                 }
               } else {
                 //se NÃO tenho uma equipe
                 projeto.href = 'cadastro-de-equipe.html'
+                document
+                  .getElementById('botoes')
+                  .setAttribute('style', 'display:grid')
               }
             })
         }
